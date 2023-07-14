@@ -1,0 +1,10 @@
+<IfModule mod_deflate.c>
+    # Memungkinkan kompresi Gzip
+    SetOutputFilter DEFLATE
+
+    # Tipe konten yang akan dikompres
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript
+
+    # Tingkat kompresi (opsional)
+    DeflateCompressionLevel 6
+</IfModule>
